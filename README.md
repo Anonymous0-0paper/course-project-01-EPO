@@ -192,10 +192,6 @@ Phase 2 deliverables: HFCO code + end‑to‑end evaluation under varied city�
 
 ---
 
-This document is ready for inclusion in the project report or as a README in the accompanying GitHub repository.
-
----
-
 ## 9  Variable Glossary (README & Algorithms)
 
 | Variable        | Type           | Appears in        | Meaning                                                         |
@@ -300,4 +296,3 @@ function SwapTwoTasks(χ):
 * **Replay:** feeds arrive‑times into CloudSim exactly as in trace; EPO‑CEIS scheduling makes on‑line decisions.
 * **Reported Metrics:** Cost, Makespan, Deadline‑Hit‑Rate, Average Fog/Cloud Utilisation, p‑value vs. baselines.
 
-These additions clarify every variable in the README, supply lower‑level algorithmic details, and lock‑in the Alibaba Cluster dataset with the specified workload sizes for reproducible evaluation.
