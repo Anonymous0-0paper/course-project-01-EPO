@@ -137,7 +137,7 @@ Output: Deployed fog set F* and inner‑layer schedule
 
 | Parameter                   | Default                  | Comment                                       |
 | --------------------------- | ------------------------ | --------------------------------------------- |
-| Population (*Npop*)         | 30–50                    | Good trade‑off between diversity and runtime. |
+| Population (*Npop*)         | 100–300                    | Good trade‑off between diversity and runtime. |
 | MaxIter                     | 200                      | Increase to 300 when HFCO outer loop active.  |
 | Phase weights (PF₁,PF₂,PF₃) | 0.5, 0.5, 0.3            | Derived by flock‑centroidal‑control tuning.   |
 | Exploration depth (U,L,a)   | 0.2, 0.7, 2              | Controls jump radius.                         |
@@ -148,7 +148,7 @@ Output: Deployed fog set F* and inner‑layer schedule
 ## 7  Evaluation Plan
 
 * **Simulator:** CloudSim 6.0 (with iFogSim 2 extensions).
-* **Datasets:** Bosch Production Line IIoT traces plus synthetic DAGs (100–1000 tasks).
+* **Datasets:** Bosch Production Line IIoT traces plus synthetic DAGs (100–1000 tasks)| you can also use just one dataset mentioned in ## 11.
 * **Baselines:** GA, PSO, NSGA‑II, EPSO, Min‑Min, FirstFit.
 * **Metrics:** deadline‑hit rate, total cost, average latency, energy (Wh), utilisation.
 * **Statistics:** Student t‑test (p < 0.05) across 30 independent runs.
